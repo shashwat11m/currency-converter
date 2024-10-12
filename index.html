@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="converter-container">
+            <h1>Currency Converter</h1>
+            <div class="input-container">
+                <div class="input-col">
+                    <label for="amtFrom" class=".c-label">Amount</label>
+                    <input type="number" id="amtFrom">
+                </div>
+                <div class="input-col from-col">
+                    <label for="from">From</label>
+                    <select id="from">
+                    </select>
+                </div>
+                <div class="input-col swap-col">
+                    <img src="switch-ico.png" alt="Switch Currency" id="switch">
+                </div>
+                <div class="input-col to-col">
+                    <label for="to">To</label>
+                    <select id="to">
+                    </select>
+                </div>
+                <br>
+                <br>
+            </div>
+            <div class="res-container">
+                <div class="exchange-rate" id="converted-amount"></div>
+                <button class="conv-btn" id="convert">Convert</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <small>Currency Converter | Made by Shashwat Mishra</small>
+    </footer>
+    <script src="currencies.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
